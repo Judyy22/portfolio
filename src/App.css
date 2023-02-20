@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+body {
+    margin: 0;
+    overflow-y: hidden;
+    font-family: "Nanum Gothic", sans-serif;
+    cursor: none;
+}
+
+.outer {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/* 화면에서 스크롤바 안보이게 */
+.outer::-webkit-scrollbar {
+    display: none;
+}
+
+.inner {
+    height: 100vh;
+}
+
+.bg-purple {
+    background-color: #d0cfee;
+}
+
+.bg-lightpurple {
+    background-color: #f7f7ff;
+}
+
+.divider {
+    width: 100%;
+    height: 5px;
+    background-color: #8f8dd7;
+}
+
+/* Hello.js */
+h1 {
+    margin: 0;
+}
+
+.homemain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.randomBox {
+    display: flex;
+    margin: 10px;
+    align-items: flex-end;
+}
+
+.randomBox > div {
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 25px;
+    width: 300px;
+    height: 25px;
+    text-align: center;
+    padding: 9px;
+}
+
+.Box-cursor::after {
+    content: "";
+    margin-left: 0.4rem;
+    border-right: 2px solid #777;
+    animation: cursor 0.9s infinite steps(2);
+}
+
+@keyframes cursor {
+    from {
+        border-right: 2px solid #222;
+    }
+    to {
+        border-right: 2px solid #777;
+    }
+}
+
+.icon {
+    font-size: 30px;
+    transform: rotate(-10deg);
+    position: relative;
+    right: 20px;
+    top: 15px;
+}
+
+.developer {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Hello.js End*/
+
+.aboutmebox {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.left-box {
+    background-color: rgba(208, 207, 238, 0.9);
+    width: 40%;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0px;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.info {
+    padding: 50px 100px;
+}
+
+.detailed-info > div {
+    margin: 30px 0px;
+    font-weight: 600;
+}
+
+.info-icon {
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+a:hover {
+    color: rgba(0, 0, 0, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+.right-box {
+    width: 60%;
+}
